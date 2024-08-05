@@ -4,16 +4,11 @@ pipeline {
         jdk 'java17'
         maven 'maven3'
     }
-    stages {
-        stage('maven Build') {
+    stages{
+        stage('maven test') {
             steps {
-                echo 'mvn clean install'
+                echo 'mvn clean test'
             }
         }
-    }
-}
-
-
-
-
-
+   }   
+}   
