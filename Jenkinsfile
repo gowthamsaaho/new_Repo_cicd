@@ -15,6 +15,11 @@ pipeline {
                 echo 'mvn clean install'
             }
         }
+         stage('maven Build 2') {
+            steps {
+                echo 'mvn clean install'
+            }
+        }
    }   
 }  
 
